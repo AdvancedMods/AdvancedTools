@@ -17,12 +17,12 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.1-alpha-1"
+version = "0.1_alpha_2"
 group= "com.zandor300.advancedtools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "advancedtools"
+archivesBaseName = "Advanced Tools"
 
 minecraft {
-    version = "1.7.10-10.13.0.1180"
+    version = "1.7.10-10.13.0.1207"
     assetDir = "eclipse/assets"
 }
 

@@ -1,2 +1,8 @@
+version 0.1_alpha_2:
+code cleanup
+added en_US.lang
+updated readme
+updated forge to version 10.13.0.1207
+
 version 0.1_alpha_1:
 initial release

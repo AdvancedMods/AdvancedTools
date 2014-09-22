@@ -114,9 +114,7 @@ public class AdvancedTools {
 	public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
 
 	@EventHandler
-	public static void PreInit(FMLPreInitializationEvent event)
-    {
-        LogHelper.info("Pre Initialization Complete!");
+	public static void PreInit(FMLPreInitializationEvent event) {
 		Proxy.registerRenderInfo();
 
 		GameRegistry.registerBlock(Transformer, "Transformer");
@@ -181,6 +179,8 @@ public class AdvancedTools {
 		LanguageRegistry.addName(redstoneSword, "Redstone Sword");
 		GameRegistry.registerItem(redstoneHoe, "Redstone Hoe");
 		LanguageRegistry.addName(redstoneHoe, "Redstone Hoe");
+
+        LogHelper.info("Pre Initialization Complete!");
 	}
 
 	private static void registerEntity(Class<? extends Entity> class1,
@@ -200,18 +200,16 @@ public class AdvancedTools {
 	}
 
 	@EventHandler
-	public static void Init(FMLInitializationEvent event)
-    {
-        LogHelper.info("Initialization Complete!");
+	public static void Init(FMLInitializationEvent event) {
 		GameRegistry.addShapedRecipe(new ItemStack(boneIngot), "BBB", "BBB",
 				'B', Items.bone);
 		GameRegistry.addShapedRecipe(new ItemStack(redstoneIngot), "RRR",
 				"RRR", 'R', Items.redstone);
+        LogHelper.info("Initialization Complete!");
 	}
 
 	@EventHandler
-	public static void PostInit(FMLPostInitializationEvent event)
-    {
+	public static void PostInit(FMLPostInitializationEvent event) {
         LogHelper.info("Post Initiaalization Complete!");
 	}
 }
